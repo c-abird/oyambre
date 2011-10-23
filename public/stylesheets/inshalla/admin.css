@@ -1,0 +1,660 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+.clear {
+  clear: both;
+}
+
+#title {
+  position: relative;
+  /* display: table-cell; */
+  vertical-align: bottom;
+  padding: 10px 50px;
+  margin: 0 auto 50px auto;
+  color: white;
+  font-family: superpointrounded;
+  width: 770px;
+  border-bottom: 1px dotted #3c3c3c;
+}
+
+#title h1 {
+  display: inline;
+  font-size: 14px;
+  color: #0183f1;
+}
+
+#title .subtitle {
+  display: inline;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+ul#navigation {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#navigation li {
+  margin: 0;
+  float: left;
+}
+
+ul#navigation li a {
+  font: 12px Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#navigation li a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * login
+ */
+#container {
+  width: 769px;
+  margin: auto;
+}
+
+#login_container {
+  width: 350px;
+  padding: 50px;
+  margin-left: 100px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #111;
+  color: #fff;
+  border: 1px dotted #3c3c3c;
+}
+
+#login_container h2 {
+  margin: 0;
+  font: 14px superpointrounded;
+}
+
+#login_container label {
+  display: block;
+  float: left;
+  width: 150px;
+  font: 12px Arial, sans-serif;
+}
+
+#login_container input {
+  border: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  width: 200px;
+}
+
+#login_container p.submit {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+#login_container input.submit {
+  background-color: #0183f1;
+  color: #fff;
+  width: auto;
+  margin-top: 20px;
+}
+
+/*
+ * FONTS
+ */
+@font-face {
+    font-family: 'superpointrounded';
+    src: url('/fonts/superpoint-webfont.eot');
+    src: url('/fonts/superpoint-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/superpoint-webfont.woff') format('woff'),
+         url('/fonts/superpoint-webfont.ttf') format('truetype'),
+         url('/fonts/superpoint-webfont.svg#superpointrounded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Accordion
+ */
+.ui-widget {
+  font-family: arial, sans-serif;
+}
+
+#accordion {
+  width: 769px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url('/images/inshalla/header.png') no-repeat;
+  height: 91px;
+  padding: 20px 0 0 190px;
+  font: 10px superpointrounded;
+  color: #444;
+  text-decoration: underline;
+}
+
+.header img.icon {
+  float: left;
+  margin-top: -11px;
+  margin-left: -179px;
+}
+
+.ui-state-hover, .ui-state-active {
+  background-position: 0 -112px;
+}
+
+.ui-accordion .ui-accordion-header a {
+  color: #fff;
+  padding: 0;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0 10px;
+  background-color: #000;
+}
+
+.ui-accordion .ui-accordion-header {
+  margin-top: 15px;
+}
+
+.ui-state-default,
+.ui-widget-content,
+.ui-widget-header,
+.ui-state-active
+{
+  border-style: dotted;
+  border-color: #3c3c3c;
+}
+
+.ui-state-hover,
+.ui-state-active {
+  border-color: #3c3c3c;
+}
+
+/*
+ * ACTIVE SCAFFODL OVERRIDES
+ */
+
+/* COLOR */
+.active-scaffold .view {
+  border: none;
+  background-color: #2b2b2b; /* TODO remove? */
+  background-color: #111;
+  padding-bottom: 15px;
+}
+
+.active-scaffold input.submit,
+.active-scaffold a.as_cancel,
+.active-scaffold a.as_cancel:visited {
+  color: #3c3c3c;
+}
+
+
+.active-scaffold a.as_cancel:hover {
+  text-decoration: none;
+}
+
+.active-scaffold a, .active-scaffold a:visited {
+  font-size: 12px;
+}
+
+.active-scaffold a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+/* nested stuff */
+.active-scaffold .active-scaffold h2 {
+  visibility: visible;
+}
+
+.active-scaffold .active-scaffold.view {
+  margin: 0;
+  width: 742px;
+  border-bottom: none;
+}
+
+.active-scaffold .active-scaffold .view {
+  background-color: transparent;
+  border: none;
+}
+
+.active-scaffold .active-scaffold .active-scaffold-header,
+.active-scaffold .active-scaffold .active-scaffold-footer {
+  background: transparent;
+  border: none;
+  margin: 5px 0;
+}
+
+.active-scaffold .active-scaffold td {
+  background: #111;
+  border-top: none;
+  border-bottom: 1px dotted #3c3c3c;
+  border-left: none;
+}
+
+.active-scaffold .active-scaffold td.actions {
+  border-top: none;
+}
+
+.active-scaffold .active-scaffold tbody.messages td {
+  border: none;
+}
+
+.active-scaffold .active-scaffold td.inline-adapter-cell {
+  background: #222;
+  border: none;
+}
+
+.active-scaffold .active-scaffold .active-scaffold-header div.actions a {
+  font-weight: normal;
+}
+
+.active-scaffold .active-scaffold .active-scaffold td {
+  background: #222;
+}
+
+.active-scaffold .active-scaffold .active-scaffold td.inline-adapter-cell {
+  background: #333;
+  border: none;
+}
+
+.active-scaffold .active-scaffold {
+  margin-left: 20px;
+  width: 700px;
+}
+
+.active-scaffold .active-scaffold .active-scaffold {
+  width: 670px;
+}
+
+/* item specific */
+/* begin shit */
+.active-scaffold h4,
+.active-scaffold li.form-element label,
+.active-scaffold tr.record td,
+.active-scaffold a,
+.active-scaffold a:visited {
+  color: #86a239;
+}
+
+.active-scaffold input.submit,
+.active-scaffold a.as_cancel,
+.active-scaffold a.as_cancel:visited {
+  background-color: #86a239;
+}
+/* end shit */
+
+.model_1 .active-scaffold h4,
+.model_1 .active-scaffold li.form-element label,
+.model_1 .active-scaffold tr.record td,
+.model_1 .active-scaffold a,
+.model_1 .active-scaffold a:visited {
+  color: #86a239;
+}
+.model_1 .active-scaffold input.submit { background-color: #86a239; }
+.model_1 .header { background-image: url('/images/inshalla/header_01.jpg'); }
+
+.model_2 .active-scaffold h4,
+.model_2 .active-scaffold li.form-element label,
+.model_2 .active-scaffold tr.record td,
+.model_2 .active-scaffold a,
+.model_2 .active-scaffold a:visited {
+  color: #359192;
+}
+.model_2 .active-scaffold input.submit { background-color: #359192; }
+.model_2 .header { background-image: url('/images/inshalla/header_02.jpg'); }
+
+.model_3 .active-scaffold h4,
+.model_3 .active-scaffold li.form-element label,
+.model_3 .active-scaffold tr.record td,
+.model_3 .active-scaffold a,
+.model_3 .active-scaffold a:visited {
+  color: #b54888;
+}
+.model_3 .active-scaffold input.submit { background-color: #b54888; }
+.model_3 .header { background-image: url('/images/inshalla/header_03.jpg'); }
+
+.model_4 .active-scaffold h4,
+.model_4 .active-scaffold li.form-element label,
+.model_4 .active-scaffold tr.record td,
+.model_4 .active-scaffold a,
+.model_4 .active-scaffold a:visited {
+  color: #c3ab39;
+}
+.model_4 .active-scaffold input.submit { background-color: #c3ab39; }
+.model_4 .header { background-image: url('/images/inshalla/header_04.jpg'); }
+
+.model_5 .active-scaffold h4,
+.model_5 .active-scaffold li.form-element label,
+.model_5 .active-scaffold tr.record td,
+.model_5 .active-scaffold a,
+.model_5 .active-scaffold a:visited {
+  color: #378eb6;
+}
+.model_5 .active-scaffold input.submit { background-color: #378eb6; }
+.model_5 .header { background-image: url('/images/inshalla/header_05.jpg'); }
+
+/* LIST OVERRIDES */
+.active-scaffold h2 {
+  visibility: hidden;
+}
+
+.active-scaffold .errorExplanation h2 {
+  visibility: visible;
+}
+
+.active-scaffold thead {
+  display: none;
+}
+
+.active-scaffold tr.record {
+  background-color: #000;
+}
+
+.active-scaffold tr.record td {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px dotted #3c3c3c;
+}
+
+.active-scaffold tr.record td.actions  {
+  border-right: none;
+}
+
+.active-scaffold tr.record td.actions a.as_action {
+  font-weight: normal;
+  color: #3c3c3c;
+}
+
+.active-scaffold .active-scaffold-footer {
+  /* display: none; */
+}
+
+.active-scaffold .as_content {
+  margin-bottom: 15px;
+}
+
+.active-scaffold .empty-message, .active-scaffold .filtered-message {
+  background-color: transparent;
+}
+
+.active-scaffold tr.record td.actions a.disabled,
+.active-scaffold tr.record td.actions a.as_action {
+  color: #aaa;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.active-scaffold tr.record td.actions a.disabled:hover {
+  text-decoration: none;
+}
+
+/* publish links */
+.active-scaffold tr.record.draft td {
+  color: #555;
+  background-color: #070707;
+}
+
+.active-scaffold .active-scaffold tr.record.draft td {
+  background-color: #171717;
+}
+
+.active-scaffold tr.record.draft td a.as_action {
+  opacity: 0.3;
+}
+
+.active-scaffold tr.record.live td a.as_action.toggle_status,
+.active-scaffold tr.record.draft td a.as_action.toggle_status {
+  display: inline-block;
+  opacity: 1.0;
+  padding-left: 20px;
+  overflow: hidden;
+  height: 0;
+  width: 16px;
+  padding: 16px 0 0 0;
+}
+
+.active-scaffold tr.record.draft td a.as_action.toggle_status {
+  background: center left url('/images/inshalla/icons/world_go.png') no-repeat;
+}
+
+.active-scaffold tr.record.live td a.as_action.toggle_status {
+  background: center left url('/images/inshalla/icons/world_delete.png') no-repeat;
+}
+
+/* FORM ELEMENTS */
+.active-scaffold .view {
+  border-bottom: 1px dotted #3c3c3c;
+}
+
+.active-scaffold {
+  width: 750px;
+}
+
+.active-scaffold li.form-element {
+  width: 630px;
+}
+
+.active-scaffold li.form-element dt {
+  float: left;
+  padding: 6px 0;
+  width: 200px;
+}
+
+.active-scaffold li.form-element dd {
+}
+
+.active-scaffold input.text-input,
+.active-scaffold select {
+  width: 413px;
+  border: none;
+  font: 14px Arial, sans-serif;
+}
+
+/* image stuff */
+.active-scaffold  .file_left {
+  float: left;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.active-scaffold  .file_left img {
+  border: none;
+}
+
+.active-scaffold  .file_right {
+  float: left;
+  width: 400px;
+}
+
+.active-scaffold  .file_right a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+
+.active-scaffold .form-footer {
+  padding-right: 100px;
+  text-align: right;
+}
+
+.active-scaffold input.submit {
+  font-weight: normal;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  padding: 4px 6px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.active-scaffold a.as_cancel,
+.active-scaffold a.as_cancel:visited {
+  display: inline-block;
+  border: none;
+  font: normal 12px arial, sans-serif !important; /* weird */
+  color: #fff;
+  padding: 4px 6px;
+  background-color: #777;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.active-scaffold .view a.inline-adapter-close {
+  width: 16px;
+  height: 16px;
+  padding: 0; /* overrides since links also have class as_cancel */
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: -48px 0 url('/images/inshalla/icons.png');
+  background-color: transparent;
+}
+
+.active-scaffold tr.record td.actions a.edit {
+  display: inline-block;
+  line-height: 16px;
+  padding-left: 20px;
+  background: center left url('/images/inshalla/icons/application_edit.png') no-repeat;
+}
+
+.active-scaffold tr.record td.actions a.destroy {
+  display: inline-block;
+  line-height: 16px;
+  padding-left: 20px;
+  background: center left url('/images/inshalla/icons/application_delete.png') no-repeat;
+}
+
+.active-scaffold tr.record td.actions a.index {
+  display: inline-block;
+  line-height: 16px;
+  padding-left: 20px;
+  background: center left url('/images/inshalla/icons/application_cascade.png') no-repeat;
+}
+
+.active-scaffold tr.record td.actions a.translate {
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+  width: 16px;
+  padding: 16px 0 0 0;
+}
+
+.active-scaffold tr.record td.actions a.translate[lang="en"] {
+  background: center left url('/images/inshalla/flags/en.png') no-repeat;
+}
+
+.active-scaffold tr.record td.actions a.translate[lang="es"] {
+  background: center left url('/images/inshalla/flags/es.png') no-repeat;
+}
+
+.active-scaffold tr.record td.actions a.translate[lang="fr"] {
+  background: center left url('/images/inshalla/flags/fr.png') no-repeat;
+}
+
+.active-scaffold tr.record td.actions a.translate[lang="de"] {
+  background: center left url('/images/inshalla/flags/de.png') no-repeat;
+}
+
+.active-scaffold .active-scaffold-header .actions a.new {
+  display: inline-block;
+  line-height: 16px;
+  padding-left: 20px !important;
+  background: center left url('/images/inshalla/icons/application_add.png') no-repeat;
+  font: normal 12px arial, sans-serif;
+  color: #fff;
+}
+
+.active-scaffold .filebutton {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #777;
+  cursor: default;
+  margin-left: 10px;
+}
+
+.active-scaffold .filebutton span {
+  position: absolute;
+  display: block;
+  cursor: default;
+  width: 120px;
+  padding-top: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* ROUND CORNERS */
+.active-scaffold input.text-input,
+.active-scaffold select {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.active-scaffold textarea {
+  width: 615px;
+  height: 140px;
+  border: none;
+  margin-bottom: 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.active-scaffold table.mceLayout {
+  border: none !important;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.active-scaffold table.mceLayout td {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: none;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+}
+
+.active-scaffold table.mceLayout tr.mceFirst td {
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding-left: 10px;
+}
+
+.active-scaffold table.mceLayout tr.mceLast td {
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+}
+
+.active-scaffold table.mceLayout a.mceResize {
+  -moz-border-radius: 0 0 0 4px;
+  -webkit-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+
+.active-scaffold .errorExplanation {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}

@@ -1,0 +1,18 @@
+de:
+  inshalla:
+    remove_file: "Datei entfernen"
+    acts_as_publishable:
+      toggle: "Status ändern"
+      confirm: "Sind Sie sicher?"
+    translate:
+      headline: "Übersetze %{model} nach %{language}"
+    lang:
+      de: "Deutsch"
+      en: "Englisch"
+      es: "Spanisch"
+      fr: "Französisch"
+  activerecord:
+    models:
+      page:
+        one: "Seite"
+        other: "Seiten"

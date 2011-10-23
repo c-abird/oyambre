@@ -1,0 +1,8 @@
+en:
+  inshalla:
+    remove_file: Remove File
+  activerecord:
+    models:
+      page:
+        one: Page
+        other: Pages

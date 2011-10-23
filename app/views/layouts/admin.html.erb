@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Administration</title>
+    <%= javascript_include_tag 'inshalla/jquery.js' %>
+    <%= javascript_include_tag 'inshalla/rails_jquery.js' %>
+    <%= javascript_include_tag 'inshalla/jquery-ui.js' %>
+    <%= javascript_include_tag 'inshalla/jquery-ui-timepicker-addon.js' %>
+    <%= javascript_include_tag 'inshalla/jquery.filestyle.js' %>
+    <%= javascript_include_tag 'inshalla/inshalla_admin.js' %>
+    <%= active_scaffold_includes %>
+
+    <%= stylesheet_link_tag    'inshalla/jquery-ui.css' %>              
+    <%= stylesheet_link_tag 'inshalla/admin' %>
+  </head>
+  <body>
+    <div id="title">
+      <h1>inshalla</h1>
+      <div class="subtitle">administration</div>
+      <% if authorized? %>
+      <ul id="navigation">
+        <li><%= link_to "logout", logout_url %></li>
+      </ul>
+      <% end %>
+      <div class="clear"></div>
+    </div>
+
+    <%= yield %>
+
+  </body>
+</html>
