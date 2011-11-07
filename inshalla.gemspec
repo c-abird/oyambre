@@ -9,12 +9,53 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = %q{2011-05-05}
+  s.date = %q{2011-11-07}
   s.email = %q{claas@cabird.de}
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
   s.files = [
+    "app/assets/fonts/superpoint-webfont.eot",
+    "app/assets/fonts/superpoint-webfont.svg",
+    "app/assets/fonts/superpoint-webfont.ttf",
+    "app/assets/fonts/superpoint-webfont.woff",
+    "app/assets/images/inshalla/flags/de.png",
+    "app/assets/images/inshalla/flags/en.png",
+    "app/assets/images/inshalla/flags/es.png",
+    "app/assets/images/inshalla/header.png",
+    "app/assets/images/inshalla/header_01.jpg",
+    "app/assets/images/inshalla/header_02.jpg",
+    "app/assets/images/inshalla/header_03.jpg",
+    "app/assets/images/inshalla/header_04.jpg",
+    "app/assets/images/inshalla/header_05.jpg",
+    "app/assets/images/inshalla/header_06.jpg",
+    "app/assets/images/inshalla/header_07.jpg",
+    "app/assets/images/inshalla/header_08.jpg",
+    "app/assets/images/inshalla/header_09.jpg",
+    "app/assets/images/inshalla/icons.png",
+    "app/assets/images/inshalla/icons/application_add.png",
+    "app/assets/images/inshalla/icons/application_cascade.png",
+    "app/assets/images/inshalla/icons/application_delete.png",
+    "app/assets/images/inshalla/icons/application_edit.png",
+    "app/assets/images/inshalla/icons/world_delete.png",
+    "app/assets/images/inshalla/icons/world_go.png",
+    "app/assets/images/inshalla/modelicons/audio.png",
+    "app/assets/images/inshalla/modelicons/folders.png",
+    "app/assets/images/inshalla/modelicons/images.png",
+    "app/assets/images/inshalla/modelicons/movies.png",
+    "app/assets/images/inshalla/modelicons/pages.png",
+    "app/assets/images/inshalla/modelicons/popups.png",
+    "app/assets/images/inshalla/modelicons/things.png",
+    "app/assets/images/inshalla/thumb_file.png",
+    "app/assets/images/inshalla/thumb_none.png",
+    "app/assets/javascripts/inshalla/inshalla_admin.js",
+    "app/assets/javascripts/inshalla/jquery-ui-timepicker-addon.js",
+    "app/assets/javascripts/inshalla/jquery-ui.js",
+    "app/assets/javascripts/inshalla/jquery.filestyle.js",
+    "app/assets/javascripts/inshalla/jquery.js",
+    "app/assets/javascripts/inshalla/rails_jquery.js",
+    "app/assets/stylesheets/inshalla/admin.css",
+    "app/assets/stylesheets/inshalla/jquery-ui.css",
     "app/controllers/admin/inshalla_controller.rb",
     "app/controllers/admin/pages_controller.rb",
     "app/controllers/admins_controller.rb",
@@ -34,21 +75,22 @@ Gem::Specification.new do |s|
     "config/locales/de.yml",
     "config/locales/en.inshalla.yml",
     "config/routes.rb",
-    "lib/active_record_extension.rb",
-    "lib/acts_as_publishable/base.rb",
     "lib/admin_controller.rb",
     "lib/application_controller.rb",
     "lib/application_helper.rb",
-    "lib/authenticated_system.rb",
-    "lib/authentication.rb",
+    "lib/authentication/authenticated_system.rb",
+    "lib/authentication/authentication.rb",
     "lib/authentication/by_cookie_token.rb",
     "lib/authentication/by_password.rb",
     "lib/engine.rb",
+    "lib/extensions/acts_as_publishable.rb",
     "lib/extensions/as_form_column_helpers.rb",
+    "lib/extensions/as_sortable_helpers.rb",
+    "lib/extensions/migration_helper.rb",
+    "lib/extensions/paperclip_extension.rb",
     "lib/extensions/paperclip_form_ui.rb",
     "lib/extensions/routing_mapper.rb",
     "lib/inshalla.rb",
-    "lib/migration_helper.rb",
     "lib/rails/generators/inshalla/inshalla_generator.rb",
     "lib/rails/generators/inshalla/templates/initializer.rb",
     "lib/rails/generators/inshalla/templates/migration.rb",
@@ -59,54 +101,23 @@ Gem::Specification.new do |s|
     "lib/rails/generators/inshalla_controller/templates/helper.rb",
     "lib/rails/generators/inshalla_resource/USAGE",
     "lib/rails/generators/inshalla_resource/inshalla_resource_generator.rb",
-    "lib/rails/railties/tasks.rake",
-    "public/fonts/generator_config.txt",
-    "public/fonts/specimen_files/easytabs.js",
-    "public/fonts/specimen_files/grid_12-825-55-15.css",
-    "public/fonts/specimen_files/specimen_stylesheet.css",
-    "public/fonts/specimen_files/superpoint-cleartype.png",
-    "public/fonts/stylesheet.css",
-    "public/fonts/superpoint-webfont.eot",
-    "public/fonts/superpoint-webfont.svg",
-    "public/fonts/superpoint-webfont.ttf",
-    "public/fonts/superpoint-webfont.woff",
-    "public/fonts/superpointrounded-demo.html",
-    "public/images/inshalla/header.png",
-    "public/images/inshalla/header_01.jpg",
-    "public/images/inshalla/header_02.jpg",
-    "public/images/inshalla/header_03.jpg",
-    "public/images/inshalla/header_04.jpg",
-    "public/images/inshalla/header_05.jpg",
-    "public/images/inshalla/header_06.jpg",
-    "public/images/inshalla/header_07.jpg",
-    "public/images/inshalla/header_08.jpg",
-    "public/images/inshalla/header_09.jpg",
-    "public/images/inshalla/icon_destroy.png",
-    "public/images/inshalla/icon_edit.png",
-    "public/images/inshalla/icon_new.png",
-    "public/images/inshalla/icons.png",
-    "public/images/inshalla/thumb_file.png",
-    "public/images/inshalla/thumb_none.png",
-    "public/javascripts/inshalla_admin.js",
-    "public/javascripts/jquery-ui-timepicker-addon.js",
-    "public/javascripts/jquery-ui.js",
-    "public/javascripts/jquery.filestyle.js",
-    "public/javascripts/jquery.js",
-    "public/javascripts/rails_jquery.js",
-    "public/stylesheets/admin.css",
-    "public/stylesheets/jquery-ui.css"
+    "lib/rails/railties/tasks.rake"
   ]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Description of your gem}
+  s.test_files = [
+    "test/test_helper.rb",
+    "test/unit/widget_test.rb"
+  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<globalize3>, [">= 0"])
-      s.add_runtime_dependency(%q<active_scaffold_vho>, [">= 0"])
-      s.add_runtime_dependency(%q<active_scaffold_sortable_vho>, [">= 0"])
+      s.add_runtime_dependency(%q<active_scaffold>, [">= 0"])
+      s.add_runtime_dependency(%q<active_scaffold_sortable>, [">= 0"])
       s.add_runtime_dependency(%q<tiny_mce>, [">= 0"])
       s.add_runtime_dependency(%q<acts_as_list>, [">= 0"])
       s.add_runtime_dependency(%q<paperclip>, [">= 0"])
@@ -117,8 +128,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<globalize3>, [">= 0"])
-      s.add_dependency(%q<active_scaffold_vho>, [">= 0"])
-      s.add_dependency(%q<active_scaffold_sortable_vho>, [">= 0"])
+      s.add_dependency(%q<active_scaffold>, [">= 0"])
+      s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
       s.add_dependency(%q<tiny_mce>, [">= 0"])
       s.add_dependency(%q<acts_as_list>, [">= 0"])
       s.add_dependency(%q<paperclip>, [">= 0"])
@@ -130,8 +141,8 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<globalize3>, [">= 0"])
-    s.add_dependency(%q<active_scaffold_vho>, [">= 0"])
-    s.add_dependency(%q<active_scaffold_sortable_vho>, [">= 0"])
+    s.add_dependency(%q<active_scaffold>, [">= 0"])
+    s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
     s.add_dependency(%q<tiny_mce>, [">= 0"])
     s.add_dependency(%q<acts_as_list>, [">= 0"])
     s.add_dependency(%q<paperclip>, [">= 0"])

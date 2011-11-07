@@ -1,7 +1,7 @@
 class AdminController < ActionController::Base # TODO whats up with the application controller
   include AuthenticatedSystem
 
-  before_filter :login_required
+  #before_filter :login_required
   before_filter :reorder_links
   layout false
 

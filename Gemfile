@@ -3,8 +3,10 @@ source "http://rubygems.org"
 # Add dependencies required to use your gem here.
 # Example:
 gem "globalize3"
-gem "active_scaffold_vho"
-gem "active_scaffold_sortable_vho"
+#gem "active_scaffold_vho"
+#gem "active_scaffold_sortable_vho"
+gem "active_scaffold"
+gem "active_scaffold_sortable"
 gem "tiny_mce"
 gem "acts_as_list"
 gem "paperclip"

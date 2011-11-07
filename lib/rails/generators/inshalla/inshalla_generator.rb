@@ -32,11 +32,12 @@ class InshallaGenerator < Rails::Generators::Base
     
     tmp = File.open "tmp/~migration_ready.rb", "w"
     tmp.write migration
+    tmp_path = File.absolute_path(tmp.path)
     tmp.close
 
-    migration_template  '../../../tmp/~migration_ready.rb',
+    migration_template  tmp_path,
                         'db/migrate/create_inshalla_tables.rb'
-    remove_file 'tmp/~migration_ready.rb'
+    remove_file tmp_path
   end
 
   def copy_initializer_file

@@ -37,7 +37,7 @@ class Admin::PagesController < AdminController
 
   inshalla_icon 'pages'
 
-  active_scaffold :pages do |config|
+  active_scaffold :page do |config|
     config.label = I18n.t('inshalla.pages')
     config.delete.link  = false
     config.show.link    = false
