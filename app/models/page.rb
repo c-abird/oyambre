@@ -1,6 +1,8 @@
 class Page < ActiveRecord::Base
   # TODO what to do on load! ???
   translates :translated_values
+  # TODO rename before_save method
+  before_save :before_save
 
   ### COLUMNS
   # dynamic_columns

@@ -23,6 +23,7 @@ class Admin::InshallaController < ApplicationController
 
   def overview
     ActiveScaffold::Bridges.run_all
+    #ActiveScaffold::Bridges::Bridge.run_all
     cms_config = YAML::load(File.open(File.join(Rails.root, 'config', 'inshalla.yml'))) rescue {}
     # TODO take value from config if exists
     @models = admin_controllers.map do |c|
