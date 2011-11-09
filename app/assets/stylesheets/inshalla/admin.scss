@@ -148,6 +148,14 @@ ul#navigation li a:hover {
   margin-left: -179px;
 }
 
+.ui-icon {
+  display: none;
+}
+
+.ui-widget-content {
+  background: none;
+}
+
 .ui-state-hover, .ui-state-active {
   background-position: 0 -112px;
 }
@@ -185,114 +193,115 @@ ul#navigation li a:hover {
  */
 
 /* COLOR */
-.active-scaffold .view {
-  border: none;
-  background-color: #2b2b2b; /* TODO remove? */
-  background-color: #111;
-  padding-bottom: 15px;
-}
+.active-scaffold {
+  .view {
+    border: none;
+    background-color: #2b2b2b; /* TODO remove? */
+    background-color: #111;
+    padding-bottom: 15px;
+  }
 
-.active-scaffold input.submit,
-.active-scaffold a.as_cancel,
-.active-scaffold a.as_cancel:visited {
-  color: #3c3c3c;
-}
+  input.submit,
+  a.as_cancel,
+  a.as_cancel:visited {
+    color: #3c3c3c;
+  }
 
+  a.as_cancel:hover {
+    text-decoration: none;
+  }
 
-.active-scaffold a.as_cancel:hover {
-  text-decoration: none;
-}
+  a, .active-scaffold a:visited {
+    font-size: 12px;
+  }
 
-.active-scaffold a, .active-scaffold a:visited {
-  font-size: 12px;
-}
+  a:hover {
+    background: none;
+    text-decoration: underline;
+  }
 
-.active-scaffold a:hover {
-  background: none;
-  text-decoration: underline;
-}
+  /* nested stuff */
+  .active-scaffold h2 {
+    visibility: visible;
+  }
 
-/* nested stuff */
-.active-scaffold .active-scaffold h2 {
-  visibility: visible;
-}
+  .active-scaffold.view {
+    margin: 0;
+    width: 742px;
+    border-bottom: none;
+  }
 
-.active-scaffold .active-scaffold.view {
-  margin: 0;
-  width: 742px;
-  border-bottom: none;
-}
+  .active-scaffold .view {
+    background-color: transparent;
+    border: none;
+  }
 
-.active-scaffold .active-scaffold .view {
-  background-color: transparent;
-  border: none;
-}
+  .active-scaffold .active-scaffold-header,
+  .active-scaffold .active-scaffold-footer {
+    background: transparent;
+    border: none;
+    margin: 5px 0;
+  }
 
-.active-scaffold .active-scaffold .active-scaffold-header,
-.active-scaffold .active-scaffold .active-scaffold-footer {
-  background: transparent;
-  border: none;
-  margin: 5px 0;
-}
+  .active-scaffold td {
+    background: #111;
+    border-top: none;
+    border-bottom: 1px dotted #3c3c3c;
+    border-left: none;
+  }
 
-.active-scaffold .active-scaffold td {
-  background: #111;
-  border-top: none;
-  border-bottom: 1px dotted #3c3c3c;
-  border-left: none;
-}
+  .active-scaffold td.actions {
+    border-top: none;
+  }
 
-.active-scaffold .active-scaffold td.actions {
-  border-top: none;
-}
+  .active-scaffold tbody.messages td {
+    border: none;
+  }
 
-.active-scaffold .active-scaffold tbody.messages td {
-  border: none;
-}
+  .active-scaffold td.inline-adapter-cell {
+    background: #222;
+    border: none;
+  }
 
-.active-scaffold .active-scaffold td.inline-adapter-cell {
-  background: #222;
-  border: none;
-}
+  .active-scaffold .active-scaffold-header div.actions a {
+    font-weight: normal;
+  }
 
-.active-scaffold .active-scaffold .active-scaffold-header div.actions a {
-  font-weight: normal;
-}
+  .active-scaffold .active-scaffold td {
+    background: #222;
+  }
 
-.active-scaffold .active-scaffold .active-scaffold td {
-  background: #222;
-}
+  .active-scaffold .active-scaffold td.inline-adapter-cell {
+    background: #333;
+    border: none;
+  }
 
-.active-scaffold .active-scaffold .active-scaffold td.inline-adapter-cell {
-  background: #333;
-  border: none;
-}
+  .active-scaffold {
+    margin-left: 20px;
+    width: 700px;
+  }
 
-.active-scaffold .active-scaffold {
-  margin-left: 20px;
-  width: 700px;
-}
+  .active-scaffold .active-scaffold {
+    width: 670px;
+  }
 
-.active-scaffold .active-scaffold .active-scaffold {
-  width: 670px;
-}
+  /* item specific */
+  /* begin shit */
+  h4,
+  li.form-element label,
+  tr.record td,
+  a,
+  a:visited {
+    color: #86a239;
+  }
 
-/* item specific */
-/* begin shit */
-.active-scaffold h4,
-.active-scaffold li.form-element label,
-.active-scaffold tr.record td,
-.active-scaffold a,
-.active-scaffold a:visited {
-  color: #86a239;
+  input.submit,
+  a.as_cancel,
+  a.as_cancel:visited {
+    background-color: #86a239;
+  }
+  /* end shit */
 }
-
-.active-scaffold input.submit,
-.active-scaffold a.as_cancel,
-.active-scaffold a.as_cancel:visited {
-  background-color: #86a239;
-}
-/* end shit */
 
 .model_1 .active-scaffold h4,
 .model_1 .active-scaffold li.form-element label,

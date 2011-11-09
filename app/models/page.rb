@@ -14,10 +14,10 @@ class Page < ActiveRecord::Base
 
     def initialize(definition)
       definition    = HashWithIndifferentAccess.new(definition)
-      @name         = definition['name']              # no default
-      @type         = definition['type'] || 'string'  # defaults to :string
-      @translatable = !!definition['translatable']    # defaults to false
-      @styles        = definition['styles'] || {}       # default paperclip styles
+      @name         = definition['name']             # no default
+      @type         = definition['type'] || 'string' # defaults to :string
+      @translatable = !!definition['translatable']   # defaults to false
+      @styles       = definition['styles'] || {}     # default paperclip styles
     end
 
     def translatable?
