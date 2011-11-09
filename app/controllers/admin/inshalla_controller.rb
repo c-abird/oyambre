@@ -1,6 +1,6 @@
 class Admin::InshallaController < ApplicationController
   include AuthenticatedSystem
-  #before_filter :login_required
+  before_filter :login_required
 
   layout "admin"
   #uses_tiny_mce :options => {
