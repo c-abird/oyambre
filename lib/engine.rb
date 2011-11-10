@@ -14,12 +14,12 @@ require 'acts_as_list'
 require 'paperclip'
 require 'active_scaffold'
 require 'active_scaffold_sortable'
-require 'tiny_mce'
+require 'tinymce-rails'
 require 'RMagick'
 
 # TODO hack, clean up
-ActionController::Base.send(:include, TinyMCE::Base)
-ActionController::Base.send(:helper, TinyMCE::Helpers)
+#ActionController::Base.send(:include, TinyMCE::Base)
+#ActionController::Base.send(:helper, TinyMCE::Helpers)
 
 # extensions
 #require 'extensions/paperclip_form_ui'

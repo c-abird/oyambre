@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = %q{2011-11-08}
+  s.date = %q{2011-11-09}
   s.email = %q{claas@cabird.de}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -54,7 +54,7 @@ Gem::Specification.new do |s|
     "app/assets/javascripts/inshalla/jquery.filestyle.js",
     "app/assets/javascripts/inshalla/jquery.js",
     "app/assets/javascripts/inshalla/rails_jquery.js",
-    "app/assets/stylesheets/inshalla/admin.css",
+    "app/assets/stylesheets/inshalla/admin.scss",
     "app/assets/stylesheets/inshalla/jquery-ui.css",
     "app/controllers/admin/inshalla_controller.rb",
     "app/controllers/admin/pages_controller.rb",
@@ -118,7 +118,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<globalize3>, [">= 0"])
       s.add_runtime_dependency(%q<active_scaffold>, [">= 0"])
       s.add_runtime_dependency(%q<active_scaffold_sortable>, [">= 0"])
-      s.add_runtime_dependency(%q<tiny_mce>, [">= 0"])
+      s.add_runtime_dependency(%q<tinymce-rails>, [">= 0"])
       s.add_runtime_dependency(%q<acts_as_list>, [">= 0"])
       s.add_runtime_dependency(%q<paperclip>, [">= 0"])
       s.add_runtime_dependency(%q<rmagick>, [">= 0"])
@@ -130,7 +130,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<globalize3>, [">= 0"])
       s.add_dependency(%q<active_scaffold>, [">= 0"])
       s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
-      s.add_dependency(%q<tiny_mce>, [">= 0"])
+      s.add_dependency(%q<tinymce-rails>, [">= 0"])
       s.add_dependency(%q<acts_as_list>, [">= 0"])
       s.add_dependency(%q<paperclip>, [">= 0"])
       s.add_dependency(%q<rmagick>, [">= 0"])
@@ -143,7 +143,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<globalize3>, [">= 0"])
     s.add_dependency(%q<active_scaffold>, [">= 0"])
     s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
-    s.add_dependency(%q<tiny_mce>, [">= 0"])
+    s.add_dependency(%q<tinymce-rails>, [">= 0"])
     s.add_dependency(%q<acts_as_list>, [">= 0"])
     s.add_dependency(%q<paperclip>, [">= 0"])
     s.add_dependency(%q<rmagick>, [">= 0"])
