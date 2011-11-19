@@ -1,7 +1,7 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-class InshallaGenerator < Rails::Generators::Base
+class OyambreGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 
   def self.source_root
@@ -36,13 +36,13 @@ class InshallaGenerator < Rails::Generators::Base
     tmp.close
 
     migration_template  tmp_path,
-                        'db/migrate/create_inshalla_tables.rb'
+                        'db/migrate/create_oyambre_tables.rb'
     remove_file tmp_path
   end
 
   def copy_initializer_file
     @token = make_token
-    template 'initializer.rb', 'config/initializers/inshalla.rb'
+    template 'initializer.rb', 'config/initializers/oyambre.rb'
   end
 
   protected

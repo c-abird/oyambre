@@ -2,7 +2,7 @@
   <% @models.each_with_index do |model, index| %>
     <div class="model_<%= index + 1 %>">
       <div class="header">
-        <%= image_tag "inshalla/modelicons/#{model[:icon]}.png", :class => 'icon' unless model[:icon].blank? %>
+        <%= image_tag "oyambre/modelicons/#{model[:icon]}.png", :class => 'icon' unless model[:icon].blank? %>
         <%= link_to model[:label], url_for(:controller => model[:controller]) %>
       </div>
       <div></div>

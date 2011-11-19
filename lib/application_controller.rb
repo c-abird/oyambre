@@ -1,4 +1,4 @@
-module Inshalla
+module Oyambre
   ## Define ControllerMethods
   module Controller
   	## this one manages the usual self.included, klass_eval stuff
@@ -23,6 +23,6 @@ module Inshalla
   end
 end
 
-::ActionController::Base.send :include, Inshalla::Controller
+::ActionController::Base.send :include, Oyambre::Controller
 
 

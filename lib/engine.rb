@@ -1,5 +1,5 @@
 # essential requires
-require 'inshalla'
+require 'oyambre'
 require 'rails'
 require 'active_support/all'
 
@@ -37,13 +37,13 @@ require 'authentication/authenticated_system'
 
 require 'admin_controller'
 
-module Inshalla
+module Oyambre
   def self.root
     File.dirname(__FILE__) + "/.."
   end
 
   #def self.copy_assets(dir, pattern)
-  #  src = File.join(Inshalla.root, 'public', dir, pattern)
+  #  src = File.join(Oyambre.root, 'public', dir, pattern)
   #  dst = File.join(Rails.root, 'public', dir)
 
   #  FileUtils.mkdir_p(dst)
@@ -56,16 +56,16 @@ module Inshalla
     end
     
     #initializer "copy static assets" do |app|
-    #  src = File.join(Inshalla.root, 'public', '*')
+    #  src = File.join(Oyambre.root, 'public', '*')
     #  dst = File.join(Rails.root, 'public')
 
-    #  Inshalla.copy_assets(File.join('javascripts', 'inshalla'), "*.js")
-    #  Inshalla.copy_assets(File.join('stylesheets', 'inshalla'), "*.css")
-    #  Inshalla.copy_assets(File.join('images', 'inshalla'), "*.*")
-    #  Inshalla.copy_assets(File.join('images', 'inshalla', 'modelicons'), "*.*")
-    #  Inshalla.copy_assets(File.join('images', 'inshalla', 'icons'), "*.*")
-    #  Inshalla.copy_assets(File.join('images', 'inshalla', 'flags'), "*.*")
-    #  Inshalla.copy_assets(File.join('fonts'), "*.*")
+    #  Oyambre.copy_assets(File.join('javascripts', 'oyambre'), "*.js")
+    #  Oyambre.copy_assets(File.join('stylesheets', 'oyambre'), "*.css")
+    #  Oyambre.copy_assets(File.join('images', 'oyambre'), "*.*")
+    #  Oyambre.copy_assets(File.join('images', 'oyambre', 'modelicons'), "*.*")
+    #  Oyambre.copy_assets(File.join('images', 'oyambre', 'icons'), "*.*")
+    #  Oyambre.copy_assets(File.join('images', 'oyambre', 'flags'), "*.*")
+    #  Oyambre.copy_assets(File.join('fonts'), "*.*")
     #end
   end
 end

@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 0) do
       :name                  => "Administrator",
       :login                 => "admin",
       :email                 => "admin@example.com",
-      :password              => "inshalla",
-      :password_confirmation => "inshalla"
+      :password              => "oyambre",
+      :password_confirmation => "oyambre"
     })
 
     # PAGES

@@ -2,7 +2,7 @@
 
 module Rails
   module Generators
-    class InshallaControllerGenerator < NamedBase #metagenerator
+    class OyambreControllerGenerator < NamedBase #metagenerator
       include ResourceHelpers
 
       def self.source_root

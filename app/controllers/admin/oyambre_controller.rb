@@ -1,4 +1,4 @@
-class Admin::InshallaController < ApplicationController
+class Admin::OyambreController < ApplicationController
   include AuthenticatedSystem
   before_filter :login_required
 
@@ -24,14 +24,14 @@ class Admin::InshallaController < ApplicationController
   def overview
     ActiveScaffold::Bridges.run_all
     #ActiveScaffold::Bridges::Bridge.run_all
-    cms_config = YAML::load(File.open(File.join(Rails.root, 'config', 'inshalla.yml'))) rescue {}
+    cms_config = YAML::load(File.open(File.join(Rails.root, 'config', 'oyambre.yml'))) rescue {}
     # TODO take value from config if exists
     @models = admin_controllers.map do |c|
       {
         :controller => "admin/#{c}",
         :label      => I18n.t("activerecord.models.#{c.singularize}.other",
                               :default => c.pluralize.humanize.downcase),
-        :icon       => "admin/#{c}_controller".classify.constantize.inshalla_icon
+        :icon       => "admin/#{c}_controller".classify.constantize.oyambre_icon
       }
     end
   end
@@ -39,7 +39,7 @@ class Admin::InshallaController < ApplicationController
   def admin_controllers
     all_controllers = Rails.application.routes.routes.map {|r| r.defaults[:controller]}.uniq
     controllers = all_controllers.select {|c| c =~ /^admin\//}.map {|c| c.gsub(/^admin\//, '') }.sort
-    controllers.delete ("inshalla")
+    controllers.delete ("oyambre")
 
     # sort but put pages entry at the beginning
     controllers.delete("pages")

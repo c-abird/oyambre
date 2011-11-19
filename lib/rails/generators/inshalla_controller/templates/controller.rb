@@ -1,5 +1,5 @@
 class Admin::<%= controller_class_name %>Controller < AdminController
-  #inshalla_icon "images"
+  #oyambre_icon "images"
   #hide_in_overview
 
   active_scaffold :<%= class_name.demodulize.underscore %> do |config|

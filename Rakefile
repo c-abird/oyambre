@@ -9,11 +9,11 @@ end
 begin
   require "jeweler"
   Jeweler::Tasks.new do |gem|
-    gem.name = "inshalla"
+    gem.name = "oyambre"
     gem.summary = "Description of your gem"
     gem.email = "claas@cabird.de"
     gem.authors = ["Claas Abert"]
-    gem.files = Dir["{lib}/**/*", "{app}/**/*", "{public}/**/*", "{config}/**/*"]
+    gem.files = Dir["{lib}/**/*", "{app}/**/*", "{config}/**/*"]
   end
   Jeweler::GemcutterTasks.new
 rescue

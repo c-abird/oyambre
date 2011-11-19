@@ -2,8 +2,8 @@
 //= require jquery-ui
 //= require jquery_ujs
 
-//# require inshalla/jquery-ui-timepicker-addon
-//= require inshalla/jquery.filestyle
+//# require oyambre/jquery-ui-timepicker-addon
+//= require oyambre/jquery.filestyle
 //= require active_scaffold
 //= require tinymce-jquery
 

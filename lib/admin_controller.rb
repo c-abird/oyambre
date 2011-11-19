@@ -7,9 +7,9 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
 
   class << self
     # combined read/writer for controller icon
-    def inshalla_icon(icon = nil)
-      @inshalla_icon = icon unless icon.nil?
-      @inshalla_icon
+    def oyambre_icon(icon = nil)
+      @oyambre_icon = icon unless icon.nil?
+      @oyambre_icon
     end
 
     # call if controller should be hidden in overview (e.g. for nested controllers)
@@ -22,7 +22,7 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
     end
 
     def active_scaffold(classname, &block)
-      cms_config    = YAML::load(File.open(File.join(Rails.root, 'config', 'inshalla.yml'))) rescue {}
+      cms_config    = YAML::load(File.open(File.join(Rails.root, 'config', 'oyambre.yml'))) rescue {}
       klass         = classname.to_s.classify.constantize
       helper_module = self.name.to_s.gsub(/Controller$/, "Helper").constantize rescue nil
 
@@ -39,8 +39,8 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
 
           label = @record.to_label       # save label
           def @record.to_label; nil; end # clear label to set headline
-          language_trans = I18n.t("inshalla.lang.#{locale}", :default => locale)
-          headline_trans = I18n.t("inshalla.translate.headline", :model => label, :language => language_trans)
+          language_trans = I18n.t("oyambre.lang.#{locale}", :default => locale)
+          headline_trans = I18n.t("oyambre.translate.headline", :model => label, :language => language_trans)
           active_scaffold_config.update.label = headline_trans
 
           # retrieve the columns to be translated (special rule for page class)
@@ -114,9 +114,9 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
         if klass.publishable?
           config.action_links.add(:toggle_status,
                                   :method => :post,
-                                  :label => I18n.t("inshalla.acts_as_publishable.toggle", :default => 'toggle status'),
+                                  :label => I18n.t("oyambre.acts_as_publishable.toggle", :default => 'toggle status'),
                                   :type => :member,
-                                  :confirm => I18n.t("inshalla.acts_as_publishable.confirm"),
+                                  :confirm => I18n.t("oyambre.acts_as_publishable.confirm"),
                                   :position => false
                                  )
         end

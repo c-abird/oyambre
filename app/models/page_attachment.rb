@@ -14,7 +14,7 @@ class PageAttachment < ActiveRecord::Base
     ).symbolize_keys
     if result.delete(:thumbnails)
       # TODO remove dublication with active record extension
-      result.merge(Inshalla::THUMBNAIL_STYLES)
+      result.merge(Oyambre::THUMBNAIL_STYLES)
     else
       result
     end

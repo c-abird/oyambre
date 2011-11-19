@@ -35,10 +35,10 @@ class Admin::PagesController < AdminController
     end
   end
 
-  inshalla_icon 'pages'
+  oyambre_icon 'pages'
 
   active_scaffold :page do |config|
-    config.label = I18n.t('inshalla.pages')
+    config.label = I18n.t('oyambre.pages')
     config.delete.link  = false
     config.show.link    = false
     config.create.link  = false

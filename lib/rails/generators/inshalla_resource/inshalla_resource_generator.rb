@@ -3,7 +3,7 @@ require 'rails/generators/rails/resource/resource_generator'
 
 module Rails
   module Generators
-    class InshallaResourceGenerator < ResourceGenerator #metagenerator
+    class OyambreResourceGenerator < ResourceGenerator #metagenerator
       remove_hook_for :resource_controller
       remove_class_option :actions
       
@@ -14,7 +14,7 @@ module Rails
         route route_config
       end 
      
-      invoke "inshalla_controller"
+      invoke "oyambre_controller"
     end
   end
 end

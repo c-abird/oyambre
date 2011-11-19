@@ -50,7 +50,7 @@ module Paperclip
   end
 end
 
-module Inshalla
+module Oyambre
   THUMBNAIL_STYLES = {
     :thumbnail_big => {
       :geometry => "155x93#",
@@ -77,7 +77,7 @@ module Inshalla
       module Config
         def has_attached_image(name, options = {})
           options[:styles] ||= {}
-          options[:styles].merge!(Inshalla::THUMBNAIL_STYLES)
+          options[:styles].merge!(Oyambre::THUMBNAIL_STYLES)
           options[:processors] = [:thumbnail, :magick]
 
           has_attached_file(name, options)
@@ -92,4 +92,4 @@ module Inshalla
   end
 end
 
-::ActiveRecord::Base.send :include, Inshalla::ActiveRecord::Base
+::ActiveRecord::Base.send :include, Oyambre::ActiveRecord::Base

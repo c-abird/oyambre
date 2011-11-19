@@ -6,7 +6,7 @@ Rails.application.routes.draw do #|map|
   resource :session
 
   # admin routes
-  match "admin/overview" => "admin/inshalla#overview"
+  match "admin/overview" => "admin/oyambre#overview"
   match "admin" => redirect('/admin/overview')
 
   # pages routes

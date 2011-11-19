@@ -1,4 +1,4 @@
-module Inshalla
+module Oyambre
   module ActsAsPublishable
 
     ## Define ModelMethods
@@ -11,7 +11,7 @@ module Inshalla
       
       module Config
         def acts_as_publishable(options = {})
-          include ::Inshalla::ActsAsPublishable::Base::InstanceMethods
+          include ::Oyambre::ActsAsPublishable::Base::InstanceMethods
           self.publishable = true
         end
 
@@ -52,5 +52,5 @@ module Inshalla
   end
 end
 
-::ActiveRecord::Base.send :include, Inshalla::ActsAsPublishable::Base
+::ActiveRecord::Base.send :include, Oyambre::ActsAsPublishable::Base
 ::ActiveRecord::Base.send :class_attribute, :publishable
