@@ -22,8 +22,9 @@ class Admin::OyambreController < ApplicationController
   #}
 
   def overview
-    ActiveScaffold::Bridges.run_all
+    #ActiveScaffold::Bridges.run_all
     #ActiveScaffold::Bridges::Bridge.run_all
+ 
     cms_config = YAML::load(File.open(File.join(Rails.root, 'config', 'oyambre.yml'))) rescue {}
     # TODO take value from config if exists
     @models = admin_controllers.map do |c|

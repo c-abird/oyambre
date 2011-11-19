@@ -8,7 +8,6 @@ require 'action_controller'
 require 'application_helper'
 
 # gem dependencies
-#require 'extensions/paperclip_form_ui'
 require 'globalize3'
 require 'acts_as_list'
 require 'paperclip'
@@ -22,7 +21,7 @@ require 'RMagick'
 #ActionController::Base.send(:helper, TinyMCE::Helpers)
 
 # extensions
-#require 'extensions/paperclip_form_ui'
+require 'extensions/paperclip_form_ui'
 require 'extensions/paperclip_extension'
 require 'extensions/routing_mapper'
 require 'extensions/migration_helper'
