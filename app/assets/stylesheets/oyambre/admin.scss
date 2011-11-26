@@ -134,7 +134,7 @@ ul#navigation li a:hover {
 }
 
 .header {
-  background: url('/assets/inshalla/header.png') no-repeat;
+  background: url('/assets/oyambre/header.png') no-repeat;
   height: 91px;
   padding: 20px 0 0 190px;
   font: 10px superpointrounded;
@@ -311,7 +311,7 @@ ul#navigation li a:hover {
   color: #86a239;
 }
 .model_1 .active-scaffold input.submit { background-color: #86a239; }
-.model_1 .header { background-image: url('/assets/inshalla/header_01.jpg'); }
+.model_1 .header { background-image: url('/assets/oyambre/header_01.jpg'); }
 
 .model_2 .active-scaffold h4,
 .model_2 .active-scaffold li.form-element label,
@@ -321,7 +321,7 @@ ul#navigation li a:hover {
   color: #359192;
 }
 .model_2 .active-scaffold input.submit { background-color: #359192; }
-.model_2 .header { background-image: url('/assets/inshalla/header_02.jpg'); }
+.model_2 .header { background-image: url('/assets/oyambre/header_02.jpg'); }
 
 .model_3 .active-scaffold h4,
 .model_3 .active-scaffold li.form-element label,
@@ -331,7 +331,7 @@ ul#navigation li a:hover {
   color: #b54888;
 }
 .model_3 .active-scaffold input.submit { background-color: #b54888; }
-.model_3 .header { background-image: url('/assets/inshalla/header_03.jpg'); }
+.model_3 .header { background-image: url('/assets/oyambre/header_03.jpg'); }
 
 .model_4 .active-scaffold h4,
 .model_4 .active-scaffold li.form-element label,
@@ -341,7 +341,7 @@ ul#navigation li a:hover {
   color: #c3ab39;
 }
 .model_4 .active-scaffold input.submit { background-color: #c3ab39; }
-.model_4 .header { background-image: url('/assets/inshalla/header_04.jpg'); }
+.model_4 .header { background-image: url('/assets/oyambre/header_04.jpg'); }
 
 .model_5 .active-scaffold h4,
 .model_5 .active-scaffold li.form-element label,
@@ -351,7 +351,7 @@ ul#navigation li a:hover {
   color: #378eb6;
 }
 .model_5 .active-scaffold input.submit { background-color: #378eb6; }
-.model_5 .header { background-image: url('/assets/inshalla/header_05.jpg'); }
+.model_5 .header { background-image: url('/assets/oyambre/header_05.jpg'); }
 
 /* LIST OVERRIDES */
 .active-scaffold h2 {
@@ -434,11 +434,11 @@ ul#navigation li a:hover {
 }
 
 .active-scaffold tr.record.draft td a.as_action.toggle_status {
-  background: center left url('/assets/inshalla/icons/world_go.png') no-repeat;
+  background: center left url('/assets/oyambre/icons/world_go.png') no-repeat;
 }
 
 .active-scaffold tr.record.live td a.as_action.toggle_status {
-  background: center left url('/assets/inshalla/icons/world_delete.png') no-repeat;
+  background: center left url('/assets/oyambre/icons/world_delete.png') no-repeat;
 }
 
 /* FORM ELEMENTS */
@@ -529,7 +529,7 @@ ul#navigation li a:hover {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  background: -48px 0 url('/assets/inshalla/icons.png');
+  background: -48px 0 url('/assets/oyambre/icons.png');
   background-color: transparent;
 }
 
@@ -537,21 +537,21 @@ ul#navigation li a:hover {
   display: inline-block;
   line-height: 16px;
   padding-left: 20px;
-  background: center left url('/assets/inshalla/icons/application_edit.png') no-repeat;
+  background: center left url('/assets/oyambre/icons/application_edit.png') no-repeat;
 }
 
 .active-scaffold tr.record td.actions a.destroy {
   display: inline-block;
   line-height: 16px;
   padding-left: 20px;
-  background: center left url('/assets/inshalla/icons/application_delete.png') no-repeat;
+  background: center left url('/assets/oyambre/icons/application_delete.png') no-repeat;
 }
 
 .active-scaffold tr.record td.actions a.index {
   display: inline-block;
   line-height: 16px;
   padding-left: 20px;
-  background: center left url('/assets/inshalla/icons/application_cascade.png') no-repeat;
+  background: center left url('/assets/oyambre/icons/application_cascade.png') no-repeat;
 }
 
 .active-scaffold tr.record td.actions a.translate {
@@ -563,26 +563,26 @@ ul#navigation li a:hover {
 }
 
 .active-scaffold tr.record td.actions a.translate[lang="en"] {
-  background: center left url('/assets/inshalla/flags/en.png') no-repeat;
+  background: center left url('/assets/oyambre/flags/en.png') no-repeat;
 }
 
 .active-scaffold tr.record td.actions a.translate[lang="es"] {
-  background: center left url('/assets/inshalla/flags/es.png') no-repeat;
+  background: center left url('/assets/oyambre/flags/es.png') no-repeat;
 }
 
 .active-scaffold tr.record td.actions a.translate[lang="fr"] {
-  background: center left url('/assets/inshalla/flags/fr.png') no-repeat;
+  background: center left url('/assets/oyambre/flags/fr.png') no-repeat;
 }
 
 .active-scaffold tr.record td.actions a.translate[lang="de"] {
-  background: center left url('/assets/inshalla/flags/de.png') no-repeat;
+  background: center left url('/assets/oyambre/flags/de.png') no-repeat;
 }
 
 .active-scaffold .active-scaffold-header .actions a.new {
   display: inline-block;
   line-height: 16px;
   padding-left: 20px !important;
-  background: center left url('/assets/inshalla/icons/application_add.png') no-repeat;
+  background: center left url('/assets/oyambre/icons/application_add.png') no-repeat;
   font: normal 12px arial, sans-serif;
   color: #fff;
 }
