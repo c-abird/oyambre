@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = %q{2011-11-19}
+  s.date = %q{2011-12-13}
   s.email = %q{claas@cabird.de}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -91,14 +91,10 @@ Gem::Specification.new do |s|
     "config/locales/de.yml",
     "config/locales/en.inshalla.yml",
     "config/routes.rb",
-    "lib/admin_controller.rb",
-    "lib/application_controller.rb",
-    "lib/application_helper.rb",
     "lib/authentication/authenticated_system.rb",
     "lib/authentication/authentication.rb",
     "lib/authentication/by_cookie_token.rb",
     "lib/authentication/by_password.rb",
-    "lib/engine.rb",
     "lib/extensions/acts_as_publishable.rb",
     "lib/extensions/as_form_column_helpers.rb",
     "lib/extensions/as_sortable_helpers.rb",
@@ -107,6 +103,10 @@ Gem::Specification.new do |s|
     "lib/extensions/paperclip_form_ui.rb",
     "lib/extensions/routing_mapper.rb",
     "lib/oyambre.rb",
+    "lib/oyambre/admin_controller.rb",
+    "lib/oyambre/application_controller.rb",
+    "lib/oyambre/application_helper.rb",
+    "lib/oyambre/engine.rb",
     "lib/rails/generators/oyambre/oyambre_generator.rb",
     "lib/rails/generators/oyambre/templates/initializer.rb",
     "lib/rails/generators/oyambre/templates/migration.rb",
