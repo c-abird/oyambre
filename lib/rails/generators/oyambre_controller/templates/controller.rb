@@ -5,6 +5,7 @@ class Admin::<%= controller_class_name %>Controller < AdminController
   active_scaffold :<%= class_name.demodulize.underscore %> do |config|
     # set list columns
     #config.list.columns = []
+    #config.list.sorting = {:title => :desc}
 
     # set editable columns
     #editable_columns = []
@@ -13,6 +14,11 @@ class Admin::<%= controller_class_name %>Controller < AdminController
 
     # set form uis
     #config.columns[].form_ui = :text_editor
+    #config.columns[].form_ui = :select
+    #config.columns[].options = {
+    #  :include_blank => true,
+    #  :options       => [['Text', 'Value]]
+    #}
 
     # add nested controllers
     #config.nested.add_link()

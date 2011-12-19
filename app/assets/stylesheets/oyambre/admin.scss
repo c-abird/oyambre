@@ -374,10 +374,12 @@ ul#navigation li a:hover {
   background-color: #000;
 }
 
-.active-scaffold tr.record td {
+.active-scaffold tr.record td,
+.active-scaffold tr.record td.sorted {
   padding: 10px;
   border: none;
   border-bottom: 1px dotted #3c3c3c;
+  background: none;
 }
 
 .active-scaffold tr.record td.actions  {

@@ -1,6 +1,16 @@
 en:
   oyambre:
     remove_file: Remove File
+    acts_as_publishable:
+      toggle: "Change Status"
+      confirm: "Are you sure?"
+    translate:
+      headline: "Translate %{model} to %{language}"
+    lang:
+      de: "German"
+      en: "English"
+      es: "Spanish"
+      fr: "French"
   activerecord:
     models:
       page:
