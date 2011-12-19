@@ -1,25 +1,9 @@
 class Admin::OyambreController < ApplicationController
   include AuthenticatedSystem
   before_filter :login_required
+  before_filter :set_locale
 
   layout "admin"
-  #uses_tiny_mce :options => {
-  #  :width => 620,
-  #  :theme => 'advanced',
-  #  :theme_advanced_buttons1 => "formatselect,bold,italic,separator,undo,redo,separator,code,cleanup,separator,bullist,numlist,separator,link,unlink",
-  #  :theme_advanced_buttons2 => "",
-  #  :theme_advanced_buttons3 => "",
-  #  :dialog_type => "modal",
-  #  :cleanup => true,
-  #  :theme_advanced_toolbar_location => "top",
-  #  :theme_advanced_statusbar_location => "bottom",
-  #  :theme_advanced_resizing => true,
-  #  :theme_advanced_resize_horizontal => false,
-  #  :theme_advanced_path => false,
-  #  :theme_advanced_toolbar_align => "left",
-  #  :theme_advanced_blockformats => "p,h2,h3",
-  #  :valid_elements => "-p,-h2,-h3,-ul,-ol,-li,-a[href|target],-strong,br,-em"
-  #}
 
   def overview
     #ActiveScaffold::Bridges.run_all
@@ -49,4 +33,10 @@ class Admin::OyambreController < ApplicationController
     # remove hidden controllers
     controllers.delete_if { |c| "admin/#{c}_controller".classify.constantize.hide_in_overview? }
   end
+
+  protected
+  # TODO remove duplication with admin_controller. create module?
+    def set_locale
+      I18n.locale = Rails.configuration.oyambre.languages.first
+    end
 end

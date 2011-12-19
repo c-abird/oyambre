@@ -29,7 +29,7 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
       helper_module = self.name.to_s.gsub(/Controller$/, "Helper").constantize rescue nil
 
       # init languages
-      languages = cms_config['languages'] || [Rails.configuration.i18n.default_locale.to_s || 'en']
+      languages       = Rails.configuration.oyambre.languages.clone
       master_language = languages.shift
 
       ####  TRANSLATION ####
@@ -163,11 +163,7 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
     end
 
     def set_locale
-      cms_config = YAML::load(File.open(File.join(Rails.root, 'config', 'oyambre.yml'))) rescue {}
-      languages = cms_config['languages'] || [Rails.configuration.i18n.default_locale.to_s || 'en']
-      master_language = languages.shift
-
-      I18n.locale = master_language
+      I18n.locale = Rails.configuration.oyambre.languages.first
     end
 
     # TODO remove klass argument???

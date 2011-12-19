@@ -1,6 +1,7 @@
 # essential requires
 require 'rails'
 require 'active_support/all'
+require 'ostruct'
 
 # requies for controller and helper extensiosn
 require 'action_controller'
