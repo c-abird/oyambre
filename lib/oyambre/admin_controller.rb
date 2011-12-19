@@ -3,6 +3,8 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
 
   before_filter :login_required
   before_filter :reorder_links
+  before_filter :set_locale
+
   layout false
 
   class << self
@@ -158,6 +160,14 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
         links.delete(:toggle_status)
         links << publish_link
       end
+    end
+
+    def set_locale
+      cms_config = YAML::load(File.open(File.join(Rails.root, 'config', 'oyambre.yml'))) rescue {}
+      languages = cms_config['languages'] || [Rails.configuration.i18n.default_locale.to_s || 'en']
+      master_language = languages.shift
+
+      I18n.locale = master_language
     end
 
     # TODO remove klass argument???
