@@ -10,7 +10,8 @@ $(function() {
     $("#accordion").accordion({          
         header: ".header",
         active: false,
-        clearStyle: true
+        clearStyle: true,
+        collapsible: true
     });
 
     $(".header", "#accordion").click(function(e) {
