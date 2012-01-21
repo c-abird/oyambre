@@ -249,10 +249,15 @@ ul#navigation li a:hover {
   }
 
   .active-scaffold td {
-    background: #111;
+    background-color: transparent;
     border-top: none;
     border-bottom: 1px dotted #3c3c3c;
     border-left: none;
+  }
+
+  // fix mce backgrounds
+  .active-scaffold .defaultSkin .mceStatusbar {
+    background: none repeat scroll 0 0 #F0F0EE;
   }
 
   .active-scaffold td.actions {
@@ -312,9 +317,7 @@ ul#navigation li a:hover {
 .model_1 .active-scaffold li.form-element label,
 .model_1 .active-scaffold tr.record td,
 .model_1 .active-scaffold a,
-.model_1 .active-scaffold a:visited {
-  color: #86a239;
-}
+.model_1 .active-scaffold a:visited { color: #86a239; }
 .model_1 .active-scaffold input.submit { background-color: #86a239; }
 .model_1 .header { background-image: url('/assets/oyambre/header_01.jpg'); }
 
@@ -322,9 +325,7 @@ ul#navigation li a:hover {
 .model_2 .active-scaffold li.form-element label,
 .model_2 .active-scaffold tr.record td,
 .model_2 .active-scaffold a,
-.model_2 .active-scaffold a:visited {
-  color: #359192;
-}
+.model_2 .active-scaffold a:visited { color: #359192; }
 .model_2 .active-scaffold input.submit { background-color: #359192; }
 .model_2 .header { background-image: url('/assets/oyambre/header_02.jpg'); }
 
@@ -332,9 +333,7 @@ ul#navigation li a:hover {
 .model_3 .active-scaffold li.form-element label,
 .model_3 .active-scaffold tr.record td,
 .model_3 .active-scaffold a,
-.model_3 .active-scaffold a:visited {
-  color: #b54888;
-}
+.model_3 .active-scaffold a:visited { color: #b54888; }
 .model_3 .active-scaffold input.submit { background-color: #b54888; }
 .model_3 .header { background-image: url('/assets/oyambre/header_03.jpg'); }
 
@@ -342,9 +341,7 @@ ul#navigation li a:hover {
 .model_4 .active-scaffold li.form-element label,
 .model_4 .active-scaffold tr.record td,
 .model_4 .active-scaffold a,
-.model_4 .active-scaffold a:visited {
-  color: #c3ab39;
-}
+.model_4 .active-scaffold a:visited { color: #c3ab39; }
 .model_4 .active-scaffold input.submit { background-color: #c3ab39; }
 .model_4 .header { background-image: url('/assets/oyambre/header_04.jpg'); }
 
@@ -352,9 +349,7 @@ ul#navigation li a:hover {
 .model_5 .active-scaffold li.form-element label,
 .model_5 .active-scaffold tr.record td,
 .model_5 .active-scaffold a,
-.model_5 .active-scaffold a:visited {
-  color: #378eb6;
-}
+.model_5 .active-scaffold a:visited { color: #378eb6; }
 .model_5 .active-scaffold input.submit { background-color: #378eb6; }
 .model_5 .header { background-image: url('/assets/oyambre/header_05.jpg'); }
 
@@ -372,7 +367,7 @@ ul#navigation li a:hover {
 }
 
 .active-scaffold tr.record {
-  background-color: #000;
+  background-color: transparent;
 }
 
 .active-scaffold tr.record td,

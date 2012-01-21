@@ -12,6 +12,11 @@ class Admin::<%= controller_class_name %>Controller < AdminController
     #config.create.columns = editable_columns
     #config.update.columns = editable_columns
 
+    # disable links in list view
+    #config.create.link = false 
+    #config.delete.link = false 
+    #config.update.link = false 
+
     # set form uis
     #config.columns[].form_ui = :text_editor
     #config.columns[].form_ui = :select
@@ -21,6 +26,6 @@ class Admin::<%= controller_class_name %>Controller < AdminController
     #}
 
     # add nested controllers
-    #config.nested.add_link()
+    #config.nested.add_link(:children)
   end
 end 
