@@ -26,6 +26,9 @@ class Admin::PagesController < AdminController
         config.columns[col.name].form_ui = 'paperclip'
         config.update.multipart = true
         config.create.multipart = true
+      when 'select'
+        config.columns[col.name].form_ui = 'select'
+        config.columns[col.name].options = {:options => col.options}
       end
 
       # translate labels

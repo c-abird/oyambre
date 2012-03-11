@@ -10,7 +10,7 @@ class Page < ActiveRecord::Base
   # translatated_values
 
   class DynamicColumn
-    attr_reader :name, :type, :styles
+    attr_reader :name, :type, :styles, :options
 
     def initialize(definition)
       definition    = HashWithIndifferentAccess.new(definition)
@@ -18,6 +18,7 @@ class Page < ActiveRecord::Base
       @type         = definition['type'] || 'string' # defaults to :string
       @translatable = !!definition['translatable']   # defaults to false
       @styles       = definition['styles'] || {}     # default paperclip styles
+      @options      = definition['options'] || []    # otions for select
     end
 
     def translatable?
@@ -29,7 +30,8 @@ class Page < ActiveRecord::Base
         :name => name,
         :type => type,
         :translatable => translatable?,
-        :styles => styles
+        :styles => styles,
+        :options => options
       }
     end
   end
