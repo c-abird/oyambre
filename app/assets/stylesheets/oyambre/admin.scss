@@ -144,7 +144,6 @@ ul#navigation li a:hover {
   padding: 20px 0 0 190px;
   font: 10px superpointrounded;
   color: #444;
-  text-decoration: underline;
 }
 
 .header img.icon {
@@ -262,6 +261,7 @@ ul#navigation li a:hover {
 
   .active-scaffold td.actions {
     border-top: none;
+    border-bottom: 2px solid red;
   }
 
   .active-scaffold tbody.messages td {
@@ -380,6 +380,7 @@ ul#navigation li a:hover {
 
 .active-scaffold tr.record td.actions  {
   border-right: none;
+  border-bottom: 1px dotted #3c3c3c;
 }
 
 .active-scaffold tr.record td.actions a.as_action {
