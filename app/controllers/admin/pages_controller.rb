@@ -20,6 +20,7 @@ class Admin::PagesController < AdminController
         # use default
       when 'html_text'
         config.columns[col.name].form_ui = 'text_editor'
+        config.columns[col.name].options[:tinymce] = Oyambre.defaults[:tinymce]
       when 'plain_text'
         config.columns[col.name].form_ui = 'textarea'
       when 'file'

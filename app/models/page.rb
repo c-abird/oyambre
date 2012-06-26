@@ -3,11 +3,16 @@ class Page < ActiveRecord::Base
   translates :translated_values
   # TODO rename before_save method
   before_save :before_save
+  attr_protected nil
 
   ### COLUMNS
   # dynamic_columns
   # values
   # translatated_values
+
+  class Translation
+    attr_accessible :locale
+  end
 
   class DynamicColumn
     attr_reader :name, :type, :styles, :options

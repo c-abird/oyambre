@@ -1,4 +1,6 @@
 class PageAttachment < ActiveRecord::Base
+  attr_protected nil
+
   has_attached_file(:file, {
     :styles => lambda { |a| a.instance.styles },
     :processors => [:thumbnail, :magick]
