@@ -48,7 +48,7 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
           # retrieve the columns to be translated (special rule for page class)
           columns = (klass == Page) ? @record.translatable_columns : @record.translated_attributes.keys
 
-          prev_columns = active_scaffold_config.update.columns # save column configuration
+          prev_columns = active_scaffold_config.update.columns.names # save column configuration
           active_scaffold_config.update.columns = columns
           respond_to_action(:edit)
           active_scaffold_config.update.columns = prev_columns # restore column configuration
