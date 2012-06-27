@@ -1,4 +1,4 @@
-# now the form helper can be overidden
+# Overwrite Form Helper
 module ActiveScaffold
   module Helpers
     module FormColumnHelpers
