@@ -18,7 +18,7 @@ require 'tinymce-rails-langs'
 require 'RMagick'
 
 # extensions
-require 'extensions/paperclip_form_ui'
+#require 'extensions/paperclip_form_ui'
 require 'extensions/paperclip_extension'
 require 'extensions/routing_mapper'
 require 'extensions/migration_helper'
@@ -33,6 +33,20 @@ require 'authentication/authenticated_system'
 
 require 'oyambre/admin_controller'
 require 'oyambre/engine'
+
+# Override Bridge Methods
+module ActiveScaffold
+  module Bridges
+    class << self
+      alias :super_run_all :run_all
+      def run_all
+        super_run_all
+
+        require 'extensions/paperclip_form_ui'
+      end
+    end
+  end
+end
 
 module Oyambre
   def self.root

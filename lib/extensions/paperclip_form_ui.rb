@@ -1,6 +1,3 @@
-# load to trick the auto loader
-require 'active_scaffold/bridges/paperclip/form_ui'
-
 # now the form helper can be overidden
 module ActiveScaffold
   module Helpers
