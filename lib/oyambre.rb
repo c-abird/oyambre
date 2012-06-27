@@ -14,6 +14,7 @@ require 'paperclip'
 require 'active_scaffold'
 require 'active_scaffold_sortable'
 require 'tinymce-rails'
+require 'tinymce-rails-langs'
 require 'RMagick'
 
 # extensions

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = "2011-12-13"
+  s.date = "2012-06-27"
   s.email = "claas@cabird.de"
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
     "app/assets/images/oyambre/flags/de.png",
     "app/assets/images/oyambre/flags/en.png",
     "app/assets/images/oyambre/flags/es.png",
+    "app/assets/images/oyambre/flags/fr.png",
     "app/assets/images/oyambre/header.png",
     "app/assets/images/oyambre/header_01.jpg",
     "app/assets/images/oyambre/header_02.jpg",
@@ -40,11 +41,14 @@ Gem::Specification.new do |s|
     "app/assets/images/oyambre/icons/world_delete.png",
     "app/assets/images/oyambre/icons/world_go.png",
     "app/assets/images/oyambre/modelicons/audio.png",
+    "app/assets/images/oyambre/modelicons/dates.png",
     "app/assets/images/oyambre/modelicons/folders.png",
     "app/assets/images/oyambre/modelicons/images.png",
     "app/assets/images/oyambre/modelicons/movies.png",
     "app/assets/images/oyambre/modelicons/pages.png",
     "app/assets/images/oyambre/modelicons/popups.png",
+    "app/assets/images/oyambre/modelicons/review_excerpts.png",
+    "app/assets/images/oyambre/modelicons/reviews.png",
     "app/assets/images/oyambre/modelicons/things.png",
     "app/assets/images/oyambre/thumb_file.png",
     "app/assets/images/oyambre/thumb_none.png",
@@ -54,22 +58,6 @@ Gem::Specification.new do |s|
     "app/assets/javascripts/oyambre/jquery.filestyle.js",
     "app/assets/javascripts/oyambre/jquery.js",
     "app/assets/javascripts/oyambre/rails_jquery.js",
-    "app/assets/javascripts/tinymce/langs/de.js",
-    "app/assets/javascripts/tinymce/plugins/advhr/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/advimage/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/advlink/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/emotions/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/fullpage/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/media/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/paste/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/searchreplace/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/style/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/table/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/template/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/plugins/xhtmlxtras/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/themes/advanced/langs/de.js",
-    "app/assets/javascripts/tinymce/themes/advanced/langs/de_dlg.js",
-    "app/assets/javascripts/tinymce/themes/simple/langs/de.js",
     "app/assets/stylesheets/oyambre/admin.scss",
     "app/assets/stylesheets/oyambre/jquery-ui.css",
     "app/controllers/admin/oyambre_controller.rb",
@@ -131,6 +119,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<active_scaffold>, [">= 0"])
       s.add_runtime_dependency(%q<active_scaffold_sortable>, [">= 0"])
       s.add_runtime_dependency(%q<tinymce-rails>, [">= 0"])
+      s.add_runtime_dependency(%q<tinymce-rails-langs>, [">= 0"])
       s.add_runtime_dependency(%q<acts_as_list>, [">= 0"])
       s.add_runtime_dependency(%q<paperclip>, [">= 0"])
       s.add_runtime_dependency(%q<rmagick>, [">= 0"])
@@ -143,6 +132,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<active_scaffold>, [">= 0"])
       s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
       s.add_dependency(%q<tinymce-rails>, [">= 0"])
+      s.add_dependency(%q<tinymce-rails-langs>, [">= 0"])
       s.add_dependency(%q<acts_as_list>, [">= 0"])
       s.add_dependency(%q<paperclip>, [">= 0"])
       s.add_dependency(%q<rmagick>, [">= 0"])
@@ -156,6 +146,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<active_scaffold>, [">= 0"])
     s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
     s.add_dependency(%q<tinymce-rails>, [">= 0"])
+    s.add_dependency(%q<tinymce-rails-langs>, [">= 0"])
     s.add_dependency(%q<acts_as_list>, [">= 0"])
     s.add_dependency(%q<paperclip>, [">= 0"])
     s.add_dependency(%q<rmagick>, [">= 0"])
