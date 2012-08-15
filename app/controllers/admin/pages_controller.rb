@@ -25,6 +25,7 @@ class Admin::PagesController < AdminController
         config.columns[col.name].form_ui = 'textarea'
       when 'file'
         config.columns[col.name].form_ui = 'paperclip'
+        config.columns[col.name].params.add "delete_#{col.name}"
         config.update.multipart = true
         config.create.multipart = true
       when 'select'
