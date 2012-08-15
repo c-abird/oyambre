@@ -61,8 +61,12 @@ class Page < ActiveRecord::Base
     rescue NoMethodError
       # before_type_cast hack included (for rails 2.3.9) TODO check if it's ok
       column_name = (md = /_before_type_cast|\?|\=/.match(method_id.to_s)) ? md.pre_match : method_id.to_s
+      # get delte value for paperclip column
+      _, delete, column_name = column_name.match(/^(delete_)?(.*)$/).to_a
+
       column      = dynamic_columns.select { |c| c.name == column_name }.first
       raise if column.nil?
+      raise if delete and column.type != 'file'
 
       json        = column.translatable? ? self.translated_values : self.values
       raw         = ActiveSupport::JSON.decode(json || '{}')
@@ -70,6 +74,17 @@ class Page < ActiveRecord::Base
       #### WRITE ATTRIBUTE ####
       if md.to_s == '='
         if column.type == 'file'
+          # check delete column and delete attachment if set to 'true'
+          if delete
+            if args.first == 'true'
+              pa = page_attachment(column_name, raw)
+              pa.file = nil
+              pa.save
+            end
+
+            return
+          end
+
           pa = page_attachment(column_name, raw)
           pa.file = args.first
           pa.save
