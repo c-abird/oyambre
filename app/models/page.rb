@@ -118,10 +118,9 @@ class Page < ActiveRecord::Base
     I18n.t("pages.#{ident}.label", :default => ident.humanize)
   end
 
-  protected
-
-  def page_attachment(column_name, raw)
+  def page_attachment(column_name, raw = nil)
     column = dynamic_columns.select { |c| c.name == column_name }.first
+    raw = ActiveSupport::JSON.decode(self.values) if raw.nil?
 
     if raw[column_name.to_s].blank? || PageAttachment.find_by_id(raw[column_name.to_s]).nil?
       pa = PageAttachment.create(:styles => column.styles)

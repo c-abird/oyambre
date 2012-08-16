@@ -89,6 +89,13 @@ module Paperclip
           page.save
           # delete attacheed files if existent
         end
+
+        def change_page_column_styles(ident, column, styles)
+          page = Page.find_by_ident(ident.to_s)
+          pa = page.page_attachment(column)
+          pa.styles = styles
+          pa.save
+        end
       end      
     end
   end
