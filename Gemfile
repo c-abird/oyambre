@@ -3,12 +3,11 @@ source "http://rubygems.org"
 # Add dependencies required to use your gem here.
 # Example:
 gem "globalize3"
-#gem "active_scaffold_vho"
-#gem "active_scaffold_sortable_vho"
 gem "active_scaffold"
 gem "active_scaffold_sortable"
 gem "tinymce-rails"
 gem "tinymce-rails-langs"
+gem "jquery-ui-rails"
 gem "acts_as_list"
 gem "paperclip"
 gem "rmagick"

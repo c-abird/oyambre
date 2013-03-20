@@ -1,6 +1,6 @@
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
+//= require jquery.ui.datepicker
 
 //= require oyambre/jquery.filestyle
 //= require active_scaffold

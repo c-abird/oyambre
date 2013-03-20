@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "oyambre"
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = "2012-08-15"
+  s.date = "2013-03-20"
   s.email = "claas@cabird.de"
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -53,11 +53,7 @@ Gem::Specification.new do |s|
     "app/assets/images/oyambre/thumb_file.png",
     "app/assets/images/oyambre/thumb_none.png",
     "app/assets/javascripts/oyambre/admin.js",
-    "app/assets/javascripts/oyambre/jquery-ui-timepicker-addon.js",
-    "app/assets/javascripts/oyambre/jquery-ui.js",
     "app/assets/javascripts/oyambre/jquery.filestyle.js",
-    "app/assets/javascripts/oyambre/jquery.js",
-    "app/assets/javascripts/oyambre/rails_jquery.js",
     "app/assets/stylesheets/oyambre/admin.scss",
     "app/assets/stylesheets/oyambre/jquery-ui.css",
     "app/controllers/admin/oyambre_controller.rb",
@@ -108,7 +104,7 @@ Gem::Specification.new do |s|
     "lib/rails/railties/tasks.rake"
   ]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.15"
   s.summary = "Description of your gem"
 
   if s.respond_to? :specification_version then
@@ -120,6 +116,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<active_scaffold_sortable>, [">= 0"])
       s.add_runtime_dependency(%q<tinymce-rails>, [">= 0"])
       s.add_runtime_dependency(%q<tinymce-rails-langs>, [">= 0"])
+      s.add_runtime_dependency(%q<jquery-ui-rails>, [">= 0"])
       s.add_runtime_dependency(%q<acts_as_list>, [">= 0"])
       s.add_runtime_dependency(%q<paperclip>, [">= 0"])
       s.add_runtime_dependency(%q<rmagick>, [">= 0"])
@@ -133,6 +130,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
       s.add_dependency(%q<tinymce-rails>, [">= 0"])
       s.add_dependency(%q<tinymce-rails-langs>, [">= 0"])
+      s.add_dependency(%q<jquery-ui-rails>, [">= 0"])
       s.add_dependency(%q<acts_as_list>, [">= 0"])
       s.add_dependency(%q<paperclip>, [">= 0"])
       s.add_dependency(%q<rmagick>, [">= 0"])
@@ -147,6 +145,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
     s.add_dependency(%q<tinymce-rails>, [">= 0"])
     s.add_dependency(%q<tinymce-rails-langs>, [">= 0"])
+    s.add_dependency(%q<jquery-ui-rails>, [">= 0"])
     s.add_dependency(%q<acts_as_list>, [">= 0"])
     s.add_dependency(%q<paperclip>, [">= 0"])
     s.add_dependency(%q<rmagick>, [">= 0"])

@@ -15,6 +15,7 @@ require 'active_scaffold'
 require 'active_scaffold_sortable'
 require 'tinymce-rails'
 require 'tinymce-rails-langs'
+require 'jquery-ui-rails'
 require 'RMagick'
 
 # extensions

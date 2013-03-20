@@ -1,5 +1,6 @@
 /*
 *= require active_scaffold
+*= require jquery.ui.datepicker
 */
 
 body {
@@ -245,6 +246,10 @@ ul#navigation li a:hover {
     background: transparent;
     border: none;
     margin: 5px 0;
+  }
+
+  .active-scaffold tr.record {
+    background: none;
   }
 
   .active-scaffold td {
