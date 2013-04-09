@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = "2013-03-20"
+  s.date = "2013-04-09"
   s.email = "claas@cabird.de"
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -55,7 +55,6 @@ Gem::Specification.new do |s|
     "app/assets/javascripts/oyambre/admin.js",
     "app/assets/javascripts/oyambre/jquery.filestyle.js",
     "app/assets/stylesheets/oyambre/admin.scss",
-    "app/assets/stylesheets/oyambre/jquery-ui.css",
     "app/controllers/admin/oyambre_controller.rb",
     "app/controllers/admin/pages_controller.rb",
     "app/controllers/admins_controller.rb",
@@ -104,7 +103,7 @@ Gem::Specification.new do |s|
     "lib/rails/railties/tasks.rake"
   ]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.15"
+  s.rubygems_version = "1.8.10"
   s.summary = "Description of your gem"
 
   if s.respond_to? :specification_version then
