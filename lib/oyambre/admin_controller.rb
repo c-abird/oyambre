@@ -24,7 +24,6 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
     end
 
     def active_scaffold(classname, &block)
-      cms_config    = YAML::load(File.open(File.join(Rails.root, 'config', 'oyambre.yml'))) rescue {}
       klass         = classname.to_s.classify.constantize
       helper_module = self.name.to_s.gsub(/Controller$/, "Helper").constantize rescue nil
 
@@ -33,7 +32,7 @@ class AdminController < ActionController::Base # TODO whats up with the applicat
       master_language = languages.shift
 
       ####  TRANSLATION ####
-      # TODO check wheather columns need to be translated
+      # TODO check whether columns need to be translated
       define_method :translate do
         locale = params[:admin_locale]
         with_locale(locale, klass) do 

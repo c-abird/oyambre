@@ -55,7 +55,7 @@ module Oyambre
   end
 
   def self.defaults
-    defaults = {
+    {
       :tinymce => {
         :cleanup => true,
         :dialog_type => 'modal',
@@ -76,6 +76,6 @@ module Oyambre
         :valid_elements => '-p,-h2,-h3,-ul,-ol,-li,-a[href|target],-strong,br,-em',
         :width => '620'
       }
-    }
+    }.deep_merge(Rails.configuration.oyambre.defaults.deep_symbolize_keys)
   end
 end
