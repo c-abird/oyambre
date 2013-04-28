@@ -55,6 +55,7 @@ module Oyambre
   end
 
   def self.defaults
+    config = Rails.configuration.oyambre.defaults.deep_symbolize_keys rescue {}
     {
       :tinymce => {
         :cleanup => true,
@@ -76,6 +77,6 @@ module Oyambre
         :valid_elements => '-p,-h2,-h3,-ul,-ol,-li,-a[href|target],-strong,br,-em',
         :width => '620'
       }
-    }.deep_merge(Rails.configuration.oyambre.defaults.deep_symbolize_keys)
+    }.deep_merge(config)
   end
 end
