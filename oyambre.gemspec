@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Claas Abert"]
-  s.date = "2013-04-28"
+  s.date = "2013-12-16"
   s.email = "claas@cabird.de"
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -103,7 +103,7 @@ Gem::Specification.new do |s|
     "lib/rails/railties/tasks.rake"
   ]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.25"
   s.summary = "Description of your gem"
 
   if s.respond_to? :specification_version then
@@ -113,12 +113,13 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<globalize3>, [">= 0"])
       s.add_runtime_dependency(%q<active_scaffold>, [">= 0"])
       s.add_runtime_dependency(%q<active_scaffold_sortable>, [">= 0"])
-      s.add_runtime_dependency(%q<tinymce-rails>, [">= 0"])
+      s.add_runtime_dependency(%q<tinymce-rails>, ["= 3.5.9"])
       s.add_runtime_dependency(%q<tinymce-rails-langs>, [">= 0"])
-      s.add_runtime_dependency(%q<jquery-ui-rails>, [">= 0"])
       s.add_runtime_dependency(%q<acts_as_list>, [">= 0"])
       s.add_runtime_dependency(%q<paperclip>, [">= 0"])
       s.add_runtime_dependency(%q<rmagick>, [">= 0"])
+      s.add_runtime_dependency(%q<jquery-rails>, ["= 2.1.4"])
+      s.add_runtime_dependency(%q<jquery-ui-rails>, ["= 3.0.1"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
@@ -127,12 +128,13 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<globalize3>, [">= 0"])
       s.add_dependency(%q<active_scaffold>, [">= 0"])
       s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
-      s.add_dependency(%q<tinymce-rails>, [">= 0"])
+      s.add_dependency(%q<tinymce-rails>, ["= 3.5.9"])
       s.add_dependency(%q<tinymce-rails-langs>, [">= 0"])
-      s.add_dependency(%q<jquery-ui-rails>, [">= 0"])
       s.add_dependency(%q<acts_as_list>, [">= 0"])
       s.add_dependency(%q<paperclip>, [">= 0"])
       s.add_dependency(%q<rmagick>, [">= 0"])
+      s.add_dependency(%q<jquery-rails>, ["= 2.1.4"])
+      s.add_dependency(%q<jquery-ui-rails>, ["= 3.0.1"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
@@ -142,12 +144,13 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<globalize3>, [">= 0"])
     s.add_dependency(%q<active_scaffold>, [">= 0"])
     s.add_dependency(%q<active_scaffold_sortable>, [">= 0"])
-    s.add_dependency(%q<tinymce-rails>, [">= 0"])
+    s.add_dependency(%q<tinymce-rails>, ["= 3.5.9"])
     s.add_dependency(%q<tinymce-rails-langs>, [">= 0"])
-    s.add_dependency(%q<jquery-ui-rails>, [">= 0"])
     s.add_dependency(%q<acts_as_list>, [">= 0"])
     s.add_dependency(%q<paperclip>, [">= 0"])
     s.add_dependency(%q<rmagick>, [">= 0"])
+    s.add_dependency(%q<jquery-rails>, ["= 2.1.4"])
+    s.add_dependency(%q<jquery-ui-rails>, ["= 3.0.1"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])

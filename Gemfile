@@ -5,12 +5,17 @@ source "http://rubygems.org"
 gem "globalize3"
 gem "active_scaffold"
 gem "active_scaffold_sortable"
-gem "tinymce-rails"
+gem "tinymce-rails", '3.5.9'
 gem "tinymce-rails-langs"
-gem "jquery-ui-rails"
+#gem "jquery-ui-rails"
 gem "acts_as_list"
 gem "paperclip"
 gem "rmagick"
+
+# Pin to old versions
+gem 'jquery-rails', '2.1.4'
+gem 'jquery-ui-rails', '3.0.1'
+
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

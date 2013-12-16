@@ -18,7 +18,10 @@ $(function() {
         // load tab if not already loaded
         var contentDiv = $(this).next("div");
         if (contentDiv.children().size() < 1) {
-          contentDiv.load($(this).find("a").attr("href"));      
+          contentDiv.load($(this).find("a").attr("href"), function() {
+            var sortable = $('.sortable-container');
+            if (sortable.length) ActiveScaffold.sortable(sortable);
+          });      
         }
     });                    
 
